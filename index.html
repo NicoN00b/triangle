@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Is it a triangle?</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <form id="triangle">
+          <div class="form-group">
+            <label for="side1">Side 1:</label>
+            <input id="side1" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="side2">Side 2:</label>
+            <input id="side2" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="side3">Side 3:</label>
+            <input id="side3" class="form-control" type="text">
+          </div>
+          <button class="btn" type="submit">Go!</button>
+        </form>
+        <div id="isosceles">
+          <p>Isosceles Triangle: Two sides are equal.</p>
+          <img src="img/triangle.Isosceles.png" alt="isosceles triangle" />
+        </div>
+        <div id="equilateral">
+          <p>Equilateral Triangle: All sides are equal.</p>
+          <img src="img/e.triangle.png" alt="equilateral triangle" />
+        </div>
+        <div id="scalene">
+          <p>Equilateral Triangle: No sides are equal.</p>
+          <img src="img/scalene.triangle.jpg" alt="Scalene triangle" />
+        </div>
+        <div id="notTriangle">
+          <p>NOT A TRIANGLE face</p>
+          <img src="img/notatriangle.jpg" alt="not a triangle" />
+        </div>
+    </div>
+  </body>
+</html>
