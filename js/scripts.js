@@ -1,13 +1,15 @@
 //back end
 
 var conditional = function(s1, s2, s3) {
-  if (s1 === s2 && s2 === s3) {
+  if ((s1 + s2)===s3) {
+    $("#notTriangle").show();
+  } else if (s1 === s2 && s2 === s3) {
     $("#equilateral").show();
   } else if (s1 === s2 || s2 === s3 || s1 === s3 ) {
     $("#isosceles").show();
   } else if (s1 !== s2 && s2 !== s3) {
     $("#scalene").show();
-}
+  }
 }
 
 
